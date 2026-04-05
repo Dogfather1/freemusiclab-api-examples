@@ -5,10 +5,10 @@ Code examples for integrating the free [FreeMusicLab.ai](https://freemusiclab.ai
 ## About the API
 
 - **Free forever** — no auth required for read endpoints
-- **2,000+ AI-generated tracks** — royalty-free, commercial use OK
+- **2,000+ AI-generated tracks** — royalty-free, no Content ID claims
+- **Generation source**: [Google Lyria](https://deepmind.google/technologies/lyria/) (Vertex AI / Gemini API). Commercial use permitted under Google's [Generative AI Terms](https://policies.google.com/terms/generative-ai).
 - **Full docs**: https://freemusiclab.ai/docs
-- **Browse tracks**: https://freemusiclab.ai/browse
-- **Upload your own AI music**: https://freemusiclab.ai/upload
+- **License**: https://freemusiclab.ai/license
 
 ## Examples in this repo
 
@@ -35,9 +35,15 @@ tracks = requests.get('https://freemusiclab.ai/api/tracks', params={'genre': 'lo
 print(tracks)
 ```
 
+## Legal & compliance notes
+
+- **AI disclosure**: when using tracks in monetized YouTube/TikTok/Meta content, enable the AI-generated content label on your platform.
+- **SynthID**: every first-party track carries an inaudible watermark identifying it as AI-generated.
+- **Commercial use**: permitted via Google's Generative AI Terms. See [license](https://freemusiclab.ai/license) for full details.
+
 ## Why a free music API?
 
-Most music APIs charge $50-500/month and restrict commercial use. We built [FreeMusicLab.ai](https://freemusiclab.ai) to give indie devs and creators a no-strings alternative.
+Most music APIs charge $50-500/month and restrict commercial use. [FreeMusicLab.ai](https://freemusiclab.ai) uses Google Lyria (a licensed model with commercial-use output rights) to provide indie devs and creators a free alternative on solid legal footing.
 
 - 🎵 [Download free music](https://freemusiclab.ai/browse)
 - ⬆️ [Upload your own AI tracks](https://freemusiclab.ai/upload)
